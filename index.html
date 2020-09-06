@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="https://pbs.twimg.com/profile_images/1297925854438268929/bl52AO-z_400x400.jpg">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script>
+        //button sounds
+        var zap = new Audio();
+        zap.src = 'assets/audio/btn.mp3';
+        //equals sounds
+        var ans = new Audio();
+        ans.src = 'assets/audio/acsend11.mp3';
+    </script>
+
+    <head>
+
+    <body>
+        <div class="hv-center">
+            <h1 style="position: absolute; font-size: 50px;z-index: -1;color: lightgray;">Calc-You'll-Ate</h1>
+            <div class="calc-container">
+                <div class="display">
+                    <p class="display__input"></p>
+                </div>
+                <div class="display display--content--right">
+                    <p class="display__output"></p>
+                </div>
+                <table class="btn-holder">
+                    <tr>
+                        <td><button onclick="zap.play()">AC</button></td>
+                        <td><button onclick="zap.play()">+/-</button></td>
+                        <td><button onclick="zap.play()">%</button></td>
+                        <td class="btn--bgcolor--light btn--top-radius--curve"><button class="btn--top-radius--curve"
+                                onclick="zap.play()">&#247;</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="zap.play()">7</button></td>
+                        <td><button onclick="zap.play()">8</button></td>
+                        <td><button onclick="zap.play()">9</button></td>
+                        <td class="btn--bgcolor--light"><button onclick="zap.play()">x</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="zap.play()">4</button></td>
+                        <td><button onclick="zap.play()">5</button></td>
+                        <td><button onclick="zap.play()">6</button></td>
+                        <td class="btn--bgcolor--light"><button onclick="zap.play()">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="zap.play()">1</button></td>
+                        <td><button onclick="zap.play()">2</button></td>
+                        <td><button onclick="zap.play()">3</button></td>
+                        <td class="btn--bgcolor--light"><button onclick="zap.play()">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="zap.play()">0</button></td>
+                        <td><button onclick="zap.play()">.</button></td>
+                        <td><button onclick="zap.play()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z" />
+                                    </svg></button></td>
+                        <td class="btn--bgcolor--light btn--bottom-radius--curve"><button class="btn--circle"
+                                onclick="ans.play()">=</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <p class="love">Made with <svg width='18px' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                    d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+                </svg> by BrunoElo</p>
+        <!-- custom js -->
+        <script type="text/javascript" src="assets/js/script.js"></script>
+    </body>
+
+</html>
