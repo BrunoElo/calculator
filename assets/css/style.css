@@ -36,8 +36,8 @@ body {
     background-image: linear-gradient(135deg,rgba(240, 181, 237, 0.712) 40%,rgb(60, 241, 142 /*, 0.7 */));
     font-family: 'Lato', sans-serif;
     border-radius: 16px;
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: 5%;
+    margin-right: 5%;
     padding: 10px;
     background-size: 400%;
     animation: gradient 5s ease infinite;
@@ -111,8 +111,8 @@ button {
     border: none;
     width: 100%;
     font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: large;
+    font-weight: 500;
+    font-size: 24px;
     cursor: pointer;
 }
 
@@ -132,7 +132,7 @@ button:active {
     background-color: teal;
     color: white;
     padding: 0;
-    margin-bottom: -4px;
+    margin-bottom: -10px;
     font-size: 24px;
     height: 61px;
     width: 61px;
@@ -161,5 +161,10 @@ button:active {
     .calc-container {
         background-size: 100%;
         animation: none;
+    }
+
+    button {
+        font-weight: 700;
+        font-size: large;
     }
 }
