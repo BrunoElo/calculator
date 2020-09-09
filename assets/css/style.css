@@ -41,13 +41,8 @@ body {
     padding: 10px;
     background-size: 400%;
     animation: gradient 5s ease infinite;
-    overflow: hidden !important;
-}
-
-@supports (backdrop-filter: none) {
-    .calc-container {       
-    backdrop-filter: blur(3px);/* */
-    }
+    overflow: hidden;
+    position: relative;
 }
 
 @keyframes gradient {
@@ -90,13 +85,13 @@ body {
 }
 
 .scientific-btn {
-    background-color: rgba(255, 255, 255, 0.555);
+    background-color: rgba(255, 255, 255, 0.808);
     position: absolute;
     transition: all .3s;
     margin-left: -264px;
     font-family: 'Lato', sans-serif;
     border-radius: 4px;
-    backdrop-filter: blur(8px);
+   /*  backdrop-filter: blur(8px); */
     cursor: pointer;
     display: flex;
     margin-top: 20px;
@@ -105,6 +100,8 @@ body {
 .scientific-btn--open {
     margin-left: 0;
 }
+
+
 
 .trigger {
     background-color: rgba(255, 255, 255, 0.555);
@@ -151,7 +148,7 @@ button {
 }
 
 button:hover {
-    color: white;
+    color: rgb(13, 134, 128);
 }
 
 button:focus {
@@ -189,6 +186,20 @@ button:active {
     margin-bottom: 0px;
     text-align: center;
 } 
+
+@supports (backdrop-filter: none) { /* For chrome */
+    .calc-container {       
+        backdrop-filter: blur(3px);/* */
+        }
+    .scientific-btn {     
+        background-color: rgba(255, 255, 255, 0.555);
+  
+    backdrop-filter: blur(8px); /**/
+    }
+    button:hover {
+        color: white;
+    }
+}
 
 @media screen and (min-width: 768px) {
     body {
