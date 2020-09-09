@@ -41,7 +41,7 @@ body {
     padding: 10px;
     background-size: 400%;
     animation: gradient 5s ease infinite;
-    
+    overflow: hidden !important;
 }
 
 @supports (backdrop-filter: none) {
@@ -80,9 +80,43 @@ body {
 }
 
 .display__output {
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 700;
     margin: 10px;
+}
+
+.btn-section {
+    display: flex;
+}
+
+.scientific-btn {
+    background-color: rgba(255, 255, 255, 0.555);
+    position: absolute;
+    transition: all .3s;
+    margin-left: -264px;
+    font-family: 'Lato', sans-serif;
+    border-radius: 4px;
+    backdrop-filter: blur(8px);
+    cursor: pointer;
+    display: flex;
+    margin-top: 20px;
+}
+
+.scientific-btn--open {
+    margin-left: 0;
+}
+
+.trigger {
+    background-color: rgba(255, 255, 255, 0.555);
+    width: 16px;
+    border-radius: 4px;
+
+}
+
+.scientific-btn button {
+    font-size: 20px;
+    padding-left: 11px;
+    padding-right: 11px;
 }
 
 .btn-holder {
@@ -128,6 +162,11 @@ button:active {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
+.angle-unit--active {
+    color: rgb(9, 27, 194);
+    font-weight: 700;
+}
+
 .btn--circle {
     background-color: teal;
     color: white;
@@ -138,6 +177,10 @@ button:active {
     width: 61px;
     border-radius: 50%;
     box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.backarr {
+    width: 20px;
 }
 
 .love {
@@ -166,5 +209,27 @@ button:active {
     button {
         font-weight: 700;
         font-size: large;
+    }
+
+    .scientific-btn {
+        margin-left: -266px;
+        margin-top: 8px;
+    }
+
+    .scientific-btn--open {
+        margin-left: 0;
+    }
+
+    .scientific-btn button {
+        font-size: 19px;
+        font-weight: 500;
+        padding: 19px;
+        padding-left: 5px;
+        
+    }
+
+    .angle-unit--active {
+        color: rgb(9, 27, 194);
+        font-weight: 700 !important;
     }
 }
