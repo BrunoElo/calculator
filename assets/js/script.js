@@ -194,8 +194,11 @@ let showAnswer = () => {
             bottomDisplay.innerHTML = "Syntax Error"
         }
     }
-    //console.log(calcArr);
 
+    if (topDisplay.innerHTML == '') {
+        bottomDisplay.innerHTML = '';
+
+    }
     if ((bottomDisplay.innerHTML === 'Infinity' && topDisplay.innerHTML.includes('/0')) || (bottomDisplay.innerHTML === 'NaN' && topDisplay.innerHTML.includes('/0'))) {
         bottomDisplay.innerHTML = 'undefined';
     }
